@@ -1,0 +1,11 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "server-dev": "cd ./packages/server && yarn dev",
+    "client-dev": "cd ./packages/client && yarn dev"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

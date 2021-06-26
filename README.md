@@ -20,6 +20,8 @@ $ yarn server-dev
 
 ### Production
 
+Note: For simplicity, I use the default `peer server`.
+
 Build client:
 
 ```bash

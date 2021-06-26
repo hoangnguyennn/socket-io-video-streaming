@@ -4,6 +4,7 @@
   "scripts": {
     "server-dev": "cd ./packages/server && yarn dev",
     "server-build": "cd ./packages/server && yarn build",
+    "start": "cd ./packages/server && yarn start",
     "client-dev": "cd ./packages/client && yarn dev",
     "client-build": "cd ./packages/client && yarn build"
   },

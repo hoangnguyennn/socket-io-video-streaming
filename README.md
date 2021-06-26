@@ -18,6 +18,8 @@ $ yarn client-dev
 $ yarn server-dev
 ```
 
+Open `http://localhost:9000/` to use.
+
 ### Production
 
 Note: For simplicity, I use the default `peer server`.
@@ -41,3 +43,5 @@ Finally, start server (by default, server was run on port `3000`):
 ```bash
 $ yarn server-start
 ```
+
+Open `http://localhost:3000/` to use.

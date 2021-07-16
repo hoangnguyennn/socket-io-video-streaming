@@ -6,7 +6,9 @@
     "server-dev": "cd ./packages/server && yarn dev",
     "client-build": "cd ./packages/client && yarn build",
     "server-build": "cd ./packages/server && yarn build",
+    "build": "yarn client-build && yarn server-build",
     "start": "cd ./packages/server && yarn start",
+    "start:with-build": "yarn build  && cp ./packages/client/dist/* ./packages/server/public && yarn start",
     "lint": "eslint",
     "lint:fix": "eslint --fix packages/**/*.ts"
   },

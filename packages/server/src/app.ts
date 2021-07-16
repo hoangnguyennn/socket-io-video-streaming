@@ -28,7 +28,7 @@ const startServer = () => {
   io.on('connection', (socket) => {
     console.log('a user connected');
 
-    socket.on('join', (id: string, href = '') => {
+    socket.on('join', (id: string, pathname = '') => {
       if (dev) {
         socket.on('open-camera', () => {
           socket.broadcast.emit('open-camera', id);
@@ -41,8 +41,7 @@ const startServer = () => {
       }
 
       let roomId = uuidV4();
-      const regex = /(?<=http:\/\/localhost:3000\/).*/i;
-      const match = href.match(regex);
+      const match = pathname.slice(1);
       if (match) {
         roomId = match[0];
       }

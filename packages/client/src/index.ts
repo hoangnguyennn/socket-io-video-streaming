@@ -75,7 +75,7 @@ const start = async () => {
 
 peer.on('open', (id: string) => {
   state.id = id;
-  socket.emit('join', id, window.location.href);
+  socket.emit('join', id, window.location.pathname);
 
   start();
 });
